@@ -1,0 +1,55 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: yellow;
+
+    display: grid;
+   grid-template-rows: 50px calc(100vh - 50px);
+ z-index: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: red;
+ 
+   
+    
+}
+
+.container {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+  
+
+}
+
+.div1 {
+    background-color: rgb(221, 131, 14);
+}
+
+.div2 {
+    background-color: rgb(13, 156, 175);
+    position: relative;
+}
+
+.div3 {
+    background-color: rgb(102, 13, 175);
+}
+
+
+.red {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    z-index: 10;
+}
+
+.green {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(51, 202, 5);
+    position: absolute;
+    z-index: 13;
+}
