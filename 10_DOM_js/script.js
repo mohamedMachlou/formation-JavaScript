@@ -4,18 +4,23 @@
 
 // Le DOM (Document Object Model) représente la structure HTML sous forme d'objet JS.
 // Chaque élément HTML est un nœud que l'on peut manipuler.
-console.log(document); // Affiche l'objet DOM complet
+// console.log(document); // Affiche l'objet DOM complet
 
 
 
 ///////////////////////////////////////////////////////////////////////////////////
 ///////////////// 2. Le Query Selector
 ///////////////////////////////////////////////////////////////////////////////////
-
+// const title = document.getElementsByClassName('header')
+// console.log(title[0].innerText)
 
 // Permet de sélectionner un élément avec un sélecteur CSS.
 // const titre = document.querySelector('h1');
 // console.log(titre.textContent);
+
+// Ex
+const input = document.querySelectorAll('.my-input')
+console.log(input)
 
 
 
