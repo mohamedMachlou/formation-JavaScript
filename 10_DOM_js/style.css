@@ -71,3 +71,14 @@ body {
 .container form button:hover {
     background-color: rgb(6, 122, 189);
 }
+
+
+.active {
+    border: 6px solid rgb(78, 47, 255);
+    background-color: yellow;
+}
+
+
+.deactive {
+    border: 2px solid red;
+}

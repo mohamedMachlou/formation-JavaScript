@@ -19,8 +19,8 @@
 // console.log(titre.textContent);
 
 // Ex
-const input = document.querySelectorAll('.my-input')
-console.log(input)
+// const input = document.querySelectorAll('.my-input')
+// console.log(input)
 
 
 
@@ -35,14 +35,18 @@ console.log(input)
 
 
 
+
 ///////////////////////////////////////////////////////////////////////////////////
 ///////////////// 4. Changer et ajouter du contenu à la page
 ///////////////////////////////////////////////////////////////////////////////////
 
 // const paragraphe = document.querySelector('p');
-// paragraphe.textContent = 'Nouveau texte ajouté !';
-// paragraphe.innerHTML += '<strong> Texte en gras </strong>';
+// paragraphe.textContent = 'Nouveau texte ajouté ';
+// paragraphe.innerHTML += '<h2> Texte en gras </h2>';
+// console.log(paragraphe)
 
+// const title = document.querySelector('span')
+// console.log(title.innerText)
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -50,8 +54,9 @@ console.log(input)
 ///////////////////////////////////////////////////////////////////////////////////
 
 // const image = document.querySelector('img');
+// console.log(image)
 // console.log(image.getAttribute('src'));
-// image.setAttribute('alt', 'Nouvelle description');
+// image.setAttribute('src', '../0_football/photo__Diaz.png');
 
 
 
@@ -59,9 +64,9 @@ console.log(input)
 ///////////////// 6. Changer le style CSS
 ///////////////////////////////////////////////////////////////////////////////////
 
-// const box = document.querySelector('.box');
-// box.style.backgroundColor = 'blue';
-// box.style.padding = '20px';
+// const title = document.querySelector('span');
+// title.style.color = 'red'
+// title.style.padding = '10px';
 
 
 
@@ -69,9 +74,10 @@ console.log(input)
 ///////////////// 7. Ajouter et supprimer une classe depuis un DOM
 ///////////////////////////////////////////////////////////////////////////////////
 
-// const titre2 = document.querySelector('h2');
-// titre2.classList.add('active');
-// titre2.classList.remove('hidden');
+// const image = document.querySelector('img');
+// image.classList.add('active');
+// image.classList.add('deactive');
+// image.classList.remove('active');
 // titre2.classList.toggle('highlight');
 
 
@@ -82,7 +88,10 @@ console.log(input)
 
 // const container = document.querySelector('.container');
 // const firstChild = container.firstElementChild;
-// const parent = firstChild.parentElement;
+// console.log(firstChild)
+
+// const parent = container.parentElement;
+// console.log(parent)
 // console.log(parent, firstChild);
 
 
@@ -91,9 +100,12 @@ console.log(input)
 ///////////////// 9. addEventListener - Event Click
 ///////////////////////////////////////////////////////////////////////////////////
 
-// const button = document.querySelector('#myBtn');
-// button.addEventListener('click', () => {
-//     alert('Bouton cliqué !');
+// const mybutton = document.querySelector('.btn');
+// const pass = document.querySelector('.password')
+// console.log(mybutton)
+// mybutton.addEventListener('click', (saf) => {
+//     saf.preventDefault()
+//     pass.classList.add('active')
 // });
 
 
@@ -104,9 +116,12 @@ console.log(input)
 
 // const ul = document.querySelector('ul');
 // const li = document.createElement('li');
-// li.textContent = 'Nouvel élément';
+// const li2 = document.createElement('li');
+// li.textContent = 'Home';
+// li2.textContent = 'About';
 // ul.appendChild(li); // Ajout
-// li.remove(); // Suppression
+// ul.appendChild(li2); // Ajout
+// li2.remove(); // Suppression
 
 
 
@@ -115,11 +130,11 @@ console.log(input)
 ///////////////////////////////////////////////////////////////////////////////////
 
 // Capture ou bubbling (par défaut : bubbling)
-// document.querySelector('#parent').addEventListener('click', (e) => {
+// document.querySelector('ul').addEventListener('click', (e) => {
 //     console.log('Parent cliqué');
 // });
 
-// document.querySelector('#child').addEventListener('click', (e) => {
+// document.querySelector('li').addEventListener('click', (e) => {
 //     e.stopPropagation(); // Empêche la propagation vers le parent
 //     console.log('Enfant cliqué');
 // });
@@ -131,6 +146,22 @@ console.log(input)
 //     }
 // });
 
+
+// const title = document.querySelector('span')
+
+// title.addEventListener('click', (e) => {
+//         e.preventDefault()
+//         console.log( e.target.innerHTML);
+//         e.target.innerHTML += ' Med'
+
+//     })
+
+// title.addEventListener('mouseout', (e) => {
+//         e.preventDefault()
+//         console.log( e.target.innerHTML);
+//         e.target.innerHTML += ' Med'
+
+//     })
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -151,12 +182,12 @@ console.log(input)
 ///////////////// 13. Les formulaires et les événements
 ///////////////////////////////////////////////////////////////////////////////////
 
-// const form = document.querySelector('form');
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault(); // Empêche l'envoi
-//     const nom = document.querySelector('#nom').value;
-//     alert('Nom saisi : ' + nom);
-// });
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Empêche l'envoi
+    const nom = document.querySelector('#nom').value;
+    alert('Nom saisi : ' + nom);
+});
 
 ///////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////
