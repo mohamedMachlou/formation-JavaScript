@@ -182,12 +182,12 @@
 ///////////////// 13. Les formulaires et les événements
 ///////////////////////////////////////////////////////////////////////////////////
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Empêche l'envoi
-    const nom = document.querySelector('#nom').value;
-    alert('Nom saisi : ' + nom);
-});
+// const form = document.querySelector('form');
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault(); // Empêche l'envoi
+//     const nom = document.querySelector('#nom').value;
+//     alert('Nom saisi : ' + nom);
+// });
 
 ///////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////
